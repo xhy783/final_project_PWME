@@ -9,5 +9,5 @@
 
 ### Clone this repository
 
-- You can clone this repository by git
-- git clone 
+- You can clone this repository by git in your terminal
+- `git clone https://github.com/xhy783/final_project_PWME.git`
