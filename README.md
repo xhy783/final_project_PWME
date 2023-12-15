@@ -2,11 +2,12 @@
 
 ### This is our final project for the class PWME
 
-- team menber: XUE Hanyu  WANG Zhenyu
+- team menber: XUE Hanyu ,  WANG Zhenyu
+  
 
-### Instructions 
+## Instructions 
 
 ### Clone this repository
 
 - You can clone this repository by git
-- 
+- git clone 
