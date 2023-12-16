@@ -1,10 +1,9 @@
-@charset "UTF-8";
 body {
   display: grid;
   place-items: center;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Avenir Next", sans-serif;
   color: #1b1b1b;
   background-color: #ebebeb;
 }
@@ -56,8 +55,8 @@ body {
   justify-content: space-around;
   position: fixed;
   top: 75px;
-  left: 0; /* 从页面左侧开始 */
-  width: 100%; /* 宽度占据整个视口宽度 */
+  left: 0;
+  width: 100%;
   height: auto;
   background-color: #5171ac;
   z-index: 1000;
@@ -95,7 +94,7 @@ body {
   margin-left: 10%;
   color: rgba(255, 255, 255, 0.8274509804);
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -112,7 +111,9 @@ body {
 }
 
 .menu ul a {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #615f5f;
   padding: 10px 15px;
 }
 
@@ -139,13 +140,13 @@ body {
   background-color: rgba(96, 211, 217, 0.945);
   border-radius: 50px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0.5em;
   font-size: 14px;
 }
 
 .login a:hover {
-  background-color: rgba(37, 208, 217, 0.945);
+  background-color: rgba(17, 183, 192, 0.945);
   color: #fff;
 }
 
@@ -174,6 +175,8 @@ body {
   text-align: left;
   padding-left: 0px;
   border-bottom: 1px solid #ebebeb;
+  color: #615f5f;
+  font-weight: 540;
 }
 
 .side-nav ul li:last-child {
@@ -194,7 +197,7 @@ body {
   padding: 20px;
   padding-left: 30px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   color: #1b1b1b;
   text-decoration: none;
 }
@@ -218,7 +221,7 @@ body {
 
 .about-header h1 {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 600;
   color: #565656;
   padding-top: 0;
   margin-top: 0;
@@ -271,7 +274,7 @@ ul.pd0 {
 
 a {
   text-decoration: none;
-  color: #1b1b1b;
+  color: #565656;
   font-weight: 600;
 }
 
@@ -288,16 +291,15 @@ a:hover {
     margin-right: 20px;
   }
   .menu-toggle {
-    font-size: 50px; /* 调整大小 */
-    color: rgb(95, 95, 95); /* 调整颜色 */
-    cursor: pointer; /* 设置鼠标样式 */
+    font-size: 50px;
+    color: rgb(95, 95, 95);
     display: flex;
+    align-items: center;
   }
   .menu-close {
     display: none;
-    height: 30px;
-    width: 30px;
-    z-index: 1001;
+    font-size: 43px;
+    color: rgb(95, 95, 95);
   }
   .side-nav {
     display: none;

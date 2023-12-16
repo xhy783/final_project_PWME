@@ -8,14 +8,13 @@
     <link rel="stylesheet" type="text/css" href="temp.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
-    <script src="main.js"></script>
-    <script src="temp.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/temp.js"></script>
 
  
 
 </head>
-<!-- body-header
-body-page-content -->
+
 <body>
     <div class="header">
         <div class="header-container">
@@ -35,8 +34,8 @@ body-page-content -->
         <div class="header-container-responsive">
             <div class="header-container-responsive__top">
             <img src="assets/img/logo_REC_SmartHome.png" alt="LogoSmartHome" width="160" height="50">
-            <span class="menu-toggle" aria-label="Menu">  ☰</span>
-            <img src="assets/img/close_menu_icon.png" alt="Close" class="menu-close hidden">
+            <span class="menu-toggle" aria-label="Menu">☰</span>
+            <span class="menu-close hidden" aria-label="Close">✕</span>
             </div>
             <div class="menu-responsive">
                 <ul>
@@ -80,32 +79,21 @@ body-page-content -->
                 <div id="temperature-slider-container">
                     <div class="TargetTemperature"><p> Target Temperature: <span id="preset-temperature">20</span>°C</p></div>
 
-                    <input type="range" id="temperature-slider" min="10" max="30" value="20">
+                    <div class="slider-container">
+                        <input type="range" id="temperature-slider" min="10" max="30" value="20" class="temperature-slider">
+                    </div>
                 </div>
-                <!-- <ul class="pd0">
-                    <li> 
-                        <img src="assets/img/company.jpg" alt="Company" width="100%" height="auto">
-                    </li>
-                </ul> -->
             </div>
             <div class="content__right__col2">
                 <ul class="mg30">
                     <li>
                         <a>Lighting</a>
-                        <!-- <a href="./Lighting.html">Lighting</a> -->
-                        <!-- <p>Read our mission statement and learn more about our goals.</p>    -->
                     </li>
                 </ul>
 
             </div>
-            <!-- <div class="content__right__col3">
-                <ul class="mg30">
-                    <li>
-                        <a href="./about.html">Contribution</a>
-                        <p>Give more people the opportunity to learn music. Contribute.</p>   
-                    </li>
-                </ul>
-            </div> -->
+            
+
         </div>
         
     </div>
