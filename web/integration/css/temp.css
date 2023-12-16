@@ -1,33 +1,23 @@
-// body, html {
-//   height: 100%;
-//   margin: 0;
-//   font-family: Arial, sans-serif;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
+@charset "UTF-8";
 #temperature-container {
   text-align: center;
-  border: 3px solid #ddd;
   padding: 20px;
-  border-radius: 8px;
-  margin-inline: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-block: 30px;
+  margin-inline: 60px;
+  background-color: rgba(173, 173, 173, 0.058);
 }
 
 #temperature-value {
-  font-size: 40px;
-  transition: color 0.5s ease;
+  font-size: 35px;
+  transition: color 0.9s ease;
+  font-weight: 600;
 }
-
-
 
 #temperature-slider-container {
   width: 100%;
   align-items: center;
   margin-top: 20px;
-  
 }
 
 #temperature-slider {
@@ -40,8 +30,8 @@
   background: #efefef; /* 滑块背景 */
   outline: none;
   opacity: 0.7; /* 透明度 */
-  -webkit-transition: .2s; /* 过渡效果 */
-  transition: opacity .2s;
+  -webkit-transition: 0.2s; /* 过渡效果 */
+  transition: opacity 0.2s;
   margin-inline: 10%;
   margin-bottom: 30px;
   border-radius: 20px;
@@ -74,11 +64,13 @@
   margin-top: 20px;
   margin-bottom: 20px;
   align-items: center;
-  p {
-    margin-left: 30px;
-    align-items: center;
-    text-decoration: none;
-    color: #444444;
-    font-weight: 400;
-  }
 }
+.TargetTemperature p {
+  margin-left: 30px;
+  align-items: center;
+  text-decoration: none;
+  color: #444444;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=temp.css.map */
