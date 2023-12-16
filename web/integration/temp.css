@@ -1,0 +1,75 @@
+@charset "UTF-8";
+#temperature-container {
+  text-align: center;
+  border: 3px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-inline: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#temperature-value {
+  font-size: 40px;
+  transition: color 0.5s ease;
+}
+
+#temperature-slider-container {
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#temperature-slider {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  -webkit-appearance: none; /* 覆盖默认外观 */
+  appearance: none;
+  height: 15px; /* 滑块高度 */
+  background: #efefef; /* 滑块背景 */
+  outline: none;
+  opacity: 0.7; /* 透明度 */
+  -webkit-transition: 0.2s; /* 过渡效果 */
+  transition: opacity 0.2s;
+  margin-inline: 10%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+#temperature-slider:hover {
+  opacity: 1; /* 滑过时更加明显 */
+}
+
+#temperature-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* 覆盖默认外观 */
+  appearance: none;
+  width: 25px; /* 滑块手柄宽度 */
+  height: 25px; /* 滑块手柄高度 */
+  background: rgba(96, 211, 217, 0.945); /* 滑块手柄颜色 */
+  cursor: pointer; /* 光标样式 */
+  border-radius: 50%; /* 圆形手柄 */
+}
+
+#temperature-slider::-moz-range-thumb {
+  width: 25px; /* 滑块手柄宽度 */
+  height: 25px; /* 滑块手柄高度 */
+  background: rgba(96, 211, 217, 0.945); /* 滑块手柄颜色 */
+  cursor: pointer; /* 光标样式 */
+  border-radius: 50%; /* 圆形手柄 */
+}
+
+.TargetTemperature {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.TargetTemperature p {
+  margin-left: 30px;
+  align-items: center;
+  text-decoration: none;
+  color: #444444;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=temp.css.map */

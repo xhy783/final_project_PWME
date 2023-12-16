@@ -1,0 +1,201 @@
+//0.                                                                        0.body 
+//body
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #1b1b1b;
+  background-color: #ebebeb;
+}
+
+a {
+  text-decoration: none;
+//get rid of the underline
+}
+
+// 1:                                                                       1.header    
+.header {
+  background-color: #fff;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.header-container {
+  max-width: 1070px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+// 1.1                                                                     1,1 menu 
+//header-container-menu
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul a{
+  font-size: 14px;
+  padding: 10px 15px;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+.menu ul a:hover{
+  background-color: #eee;
+  border-radius: 50px;
+  color: #1b1b1b;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 20px;
+  padding: 10px 15px;
+}
+//1.2:                                                                    1.2login 
+//header-container-login
+.login{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.login a {
+  margin-right: 20px;
+  padding: 10px 30px;
+  background-color: #72ac51;
+  border-radius: 50px; 
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: .5em;
+  font-size: 14px;
+}
+
+.login a:hover {
+  background-color: #47752d;
+  color: #fff;
+}
+
+.active{
+  //i write this because the log in button is active in the login page
+  background-color: #47752d!important;
+
+}
+//2:                                                                    2.content
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 570px;
+  height: 319.8px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+//2.1                                                                      2.1logtitle
+//content-logtitle h1
+.logtitle {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #565656;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.logtitle h1{
+  font-size: 32px;
+  font-weight: 400;
+  color: #565656;
+  padding-top: 0;
+  margin-top: 47px;
+  margin-bottom: 20px;
+}
+
+//2.2                                                                 2.2logform
+//content-logform
+.logform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  width: 450px;
+}
+
+//2.2.1                                                                   2.2.1logform-input
+//content-logform-input
+.logform input {
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 20px; 
+  border-radius: 2px; 
+  border: 1px solid #cccccc;
+  width: 430px;
+  height: 25px;
+}
+
+.logform input:focus {
+  outline: 1px solid #72ac51; 
+  border-radius: 5px; 
+}
+
+.logform input:invalid {
+  outline: 1px solid #ff0000; 
+  border-radius: 5px; 
+}
+
+input::placeholder {
+  color: #9e9e9e; 
+  //placeholder color is grey not black
+}
+//2.2.2                                                                 2.2.2logform-submit
+//content-logform-submit
+.logform input[type="submit"] {
+  background-color: #72ac51;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px; 
+  margin-bottom: 40px;
+  height: 42px;
+}
+
+.logform input[type="submit"]:hover {
+  background-color: #47752d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
