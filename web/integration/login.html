@@ -4,29 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musicca - login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>SmartHome - login</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+
 </head>
 <body>
     <div class="header">
         <div class="header-container"> 
-            <img src="assets/img/musicca-logo.png" alt="Musicca Logo" width="180" height="29.5">
+            <div class="btn-animate btn-animate__around">
+                <img src="assets/img/logo_REC_SmartHome.png" alt="LogoSmartHome" width="160" height="50">
+                <svg>
+                  <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+              </svg>
+                  </div>
             <div class="menu">
                 <ul>
-                    <li><a href="./about.html">Exercises</a></li>
-                    <li><a href="./about.html">Lessons</a></li>
+                    <li><a href="./Virtual_Room.html">Virtual Room</a></li>
+                    <li><a href="./Configuration.html">Configuration</a></li>
                     <li><a href="./about.html">About</a></li>
                 </ul>
             </div>
             <div class="login">
                 <a href="./login.html">Create account</a>
-                <a class="active" href="./login.html">Log in</a>
+                <a href="./login.html">Log in</a>
+            </div>
+        </div>
+        <div class="header-container-responsive">
+            <div class="header-container-responsive__top">
+            <img src="assets/img/logo_REC_SmartHome.png" alt="LogoSmartHome" width="160" height="50">
+            <span class="menu-toggle" aria-label="Menu">☰</span>
+            <span class="menu-close hidden" aria-label="Close">✕</span>
+            </div>
+            <div class="menu-responsive">
+                <ul>
+                    <li><a href="./login.html">Create account</a></li>
+                    <li><a href="./login.html">Log in</a></li>        
+                    <li><a href="./Virtual_Room.html">Virtual Room</a></li>
+                    <li><a href="./Virtual_Room.html">Overview</a></li>
+                    <li><a href="./Configuration.html">Configuration</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="content">
+    <div class="login-content">
       <div class="logtitle">
           <h1>Log in</h1>
           <div class="logform">
