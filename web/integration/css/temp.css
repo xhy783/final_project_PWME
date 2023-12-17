@@ -5,13 +5,28 @@
   border-radius: 15px;
   margin-block: 30px;
   margin-inline: 60px;
-  background-color: rgba(173, 173, 173, 0.058);
+  background: linear-gradient(to bottom right, rgb(161, 235, 246), rgb(241, 182, 248));
 }
 
 #temperature-value {
-  font-size: 35px;
+  font-size: 50px;
   transition: color 0.9s ease;
-  font-weight: 600;
+  font-weight: 300;
+}
+
+#temperature-value sup {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+#temperature-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#temperature-icon {
+  transition: color 0.9s ease;
 }
 
 #temperature-slider-container {

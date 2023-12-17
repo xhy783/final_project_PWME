@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHomeOverview</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/temp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/main.js"></script>
+    <script src="js/temp.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="btn-animate btn-animate__around">
+                <img src="assets/img/logo_REC_SmartHome.png" alt="LogoSmartHome" width="160" height="50">
+                <svg>
+                  <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+              </svg>
+                  </div>            <div class="menu">
+                <ul>
+                    <li><a href="./Virtual_Room.html">Virtual Room</a></li>
+                    <li><a href="./Configuration.html">Configuration</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <a href="./login.html">Create account</a>
+                <a href="./login.html">Log in</a>
+            </div>
+        </div>
+        <div class="header-container-responsive">
+            <div class="header-container-responsive__top">
+            <img src="assets/img/logo_REC_SmartHome.png" alt="LogoSmartHome" width="160" height="50">
+            <span class="menu-toggle" aria-label="Menu">☰</span>
+            <span class="menu-close hidden" aria-label="Close">✕</span>
+            </div>
+            <div class="menu-responsive">
+                <ul>
+                    <li><a href="./login.html">Create account</a></li>
+                    <li><a href="./login.html">Log in</a></li>        
+                    <li><a href="./Virtual_Room.html">Virtual Room</a></li>
+                    <li><a href="./Virtual_Room.html">Overview</a></li>
+                    <li><a href="./Configuration.html">Configuration</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="page-content">
+        <div class="side-nav">
+            <ul>
+                <li><a href="./Overview.html" class="active">Overview</a></li>
+                <li><a href="./Energy.html">Energy</a></li>
+                <li><a href="./Environment.html">Environment</a></li>
+            </ul>
+        </div>
+        
+        
+        <div class="content-section">
+            <div class="about-header">
+                <h1>Overview of your SmartHome</h1>
+        </div>
+
+        <div class="content__right">
+            <div class="content__right__col1">
+                <ul class="mg30">
+                    <li>
+                        <a>Temperature</a>
+                        <p> Current Temperature</p>     
+                    </li>
+                </ul>
+                
+                <div id="temperature-container">
+                    <div id="temperature-display">
+                    <svg id="temperature-icon" xmlns="http://www.w3.org/2000/svg" height="45" viewBox="-40 -930 960 960" width="45">
+                        <path d="M480-120q-83 0-141.5-58.5T280-320q0-48 21-89.5t59-70.5v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q38 29 59 70.5t21 89.5q0 83-58.5 141.5T480-120Zm0-80q50 0 85-35t35-85q0-29-12.5-54T552-416l-32-24v-280q0-17-11.5-28.5T480-760q-17 0-28.5 11.5T440-720v280l-32 24q-23 17-35.5 42T360-320q0 50 35 85t85 35Zm0-120Z"/>
+                    </svg>
+                    <div id="temperature-value">20<sup>°C</sup></div>
+                    </div>
+                </div>
+                
+                <div id="temperature-slider-container">
+                    <div class="TargetTemperature"><p> Target Temperature: <span id="preset-temperature">20</span>°C</p></div>
+
+                    <div class="slider-container">
+                        <input type="range" id="temperature-slider" min="10" max="30" value="20" class="temperature-slider">
+                    </div>
+                </div>
+            </div>
+            <div class="content__right__col2">
+                <ul class="mg30">
+                    <li>
+                        <a>Weather</a>
+                    </li>
+                    <li><p></p></li>
+                    <div id="weather-container">
+                        <p>Weather: <li><p></p></li><span id="weather-data">Loading...</span></p>
+                    </div>
+                    <p>Tips: Because I use the Chinese weather API, so here it indicates the weather in DongCheng District, Beijing </p>
+                </ul>
+
+            </div>
+            
+
+        </div>
+        <div class="content__right2">
+            <div class="content__right__col1">
+                <ul class="mg30">
+                    <li>
+                        <a>Switch</a>
+                    </li>
+                    <li><p></p></li>
+                    <li>
+                        <xp>Kitchen</xp>     
+                        <p>💡Celling Light <label class="switch"><input type="checkbox" class="light-switch"><span class="slider round"></span></label></p>
+                        <p>💡Stove Light <label class="switch"><input type="checkbox" class="light-switch"><span class="slider round"></span></label></p>
+                    </li>
+                    
+                    <li>
+                        <xp>Bedroom</xp>     
+                        <p>💡Celling Light  <label class="switch"><input type="checkbox" class="light-switch"><span class="slider round"></span></label></p>
+                        <p>💡Monitor Light  <label class="switch"><input type="checkbox" class="light-switch"><span class="slider round"></span></label></p>
+                    </li>
+                    
+                    <li>
+                        <xp>Livingroom</xp>     
+                        <p>💡Celling Light  <label class="switch"><input type="checkbox" class="light-switch"><span class="slider round"></span></label></p>
+                        <p>💡TV Light  <label class="switch"><input type="checkbox" class="light-switch"><span class="slider round"></span></label></p>
+                    </li>
+
+                </ul>
+                
+            </div>
+            <div class="content__right__col2">
+                <ul class="mg30">
+                    <li>
+                        <a>Window</a>
+                    </li>
+                    <li><p></p></li>
+                    <li>
+                        <xp>Kitchen</xp>     
+                        <p>🪟Window <label class="window-switch"><input type="checkbox"><span class="window-slider-close"></span></label></p>
+                    </li>
+                    
+                    <li>
+                        <xp>Bedroom</xp>     
+                        <p>🪟Window  <label class="window-switch"><input type="checkbox"><span class="window-slider-close"></span></label></p>
+                    </li>
+                    
+                    <li>
+                        <xp>Livingroom</xp>     
+                        <p>🪟North▲ Window <label class="window-switch"><input type="checkbox"><span class="window-slider-open"></span></label></p>
+                        <p>🪟West◀ Window <label class="window-switch"><input type="checkbox"><span class="window-slider-open"></span></label></p>
+                    </li>
+
+                </ul>
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+    <script src="js/weather.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     var currentTemperature = 20;
     var slider = document.getElementById('temperature-slider');
@@ -30,10 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-function updateTemperature(temperature, presetTemperature) {
+function updateTemperature(temperature) {
     var temperatureElement = document.getElementById('temperature-value');
-    temperatureElement.textContent = temperature + '°C';
-    temperatureElement.style.color = getColorForTemperature(temperature);
+    temperatureElement.innerHTML = temperature + '<sup>°C</sup>';
+
+    var color = getColorForTemperature(temperature);
+    var svgElement = document.getElementById('temperature-icon');
+    svgElement.style.fill = color;
 }
 
 function getColorForTemperature(temperature) {
@@ -42,9 +46,9 @@ function getColorForTemperature(temperature) {
 }
 
 function calculateShadow(presetTemperature) {
-    
     var shadowX = (presetTemperature - 20) * -2;
-
     var shadowOpacity = 0 + (presetTemperature - 20) * 0.009;
-    return `${shadowX}px -20px 20px rgba(173, 173, 173, ${shadowOpacity})`;
+    // 使用rgba颜色值，其中透明度为shadowOpacity
+    return `${shadowX}px -20px 20px rgba(27, 27, 27, ${shadowOpacity})`;
 }
+
