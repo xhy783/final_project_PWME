@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartHomeOverview</title>
+    <title>SmartHomeEnvironement</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/temp.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <li><a href="./login.html">Create account</a></li>
                     <li><a href="./login.html">Log in</a></li>        
                     <li><a href="./Virtual_Room.html">Virtual Room</a></li>
-                    <li><a href="./Environment.html">Environment</a></li>
+                    <li><a href="./Virtual_Room.html">Overview</a></li>
                     <li><a href="./Configuration.html">Configuration</a></li>
                     <li><a href="./about.html">About</a></li>
                 </ul>
@@ -57,10 +57,9 @@
     <div class="page-content">
         <div class="side-nav">
             <ul>
-                <!-- <li><a href="./Overview.html" class="active">Overview</a></li> -->
-                <li><a href="./Virtual_Room.html" class="active">Overview</a></li>
+                <li><a href="./Virtual_Room.html">Overview</a></li>
                 <li><a href="./Energy.html">Energy</a></li>
-                <li><a href="./Environment.html">Environment</a></li>
+                <li><a href="./Environment.html" class="active">Environment</a></li>
             </ul>
         </div>
         
@@ -116,14 +115,9 @@
             <div class="content__right__col1">
                 <ul class="mg30">
                     <li>
-                        <a>Switch</a>
+                        <a>Air conditionner</a>
                     </li>
                     <li><p></p></li>
-                    <li>
-                        <xp>Kitchen</xp>     
-                        <p>💡Celling Light <label class="switch"><input type="checkbox" class="light-switch"><span class="slider round"></span></label></p>
-                        <p>💡Stove Light <label class="switch"><input type="checkbox" class="light-switch"><span class="slider round"></span></label></p>
-                    </li>
                     
                     <li>
                         <xp>Bedroom</xp>     
@@ -143,25 +137,24 @@
             <div class="content__right__col2">
                 <ul class="mg30">
                     <li>
-                        <a>Window</a>
+                        <a>当前光照强度</a>
                     </li>
                     <li><p></p></li>
-                    <li>
-                        <xp>Kitchen</xp>     
-                        <p>🪟Window <label class="window-switch"><input type="checkbox"><span class="window-slider-close"></span></label></p>
-                    </li>
                     
                     <li>
-                        <xp>Bedroom</xp>     
-                        <p>🪟Window  <label class="window-switch"><input type="checkbox"><span class="window-slider-close"></span></label></p>
+                        <xp>Badroom</xp>     
+                        <!-- <p>🪟Window  <label class="light-intense"><input type="checkbox"><span class="window-slider-close"></span></label></p> -->
                     </li>
                     
                     <li>
                         <xp>Livingroom</xp>     
-                        <p>🪟North▲ Window <label class="window-switch"><input type="checkbox"><span class="window-slider-open"></span></label></p>
-                        <p>🪟West◀ Window <label class="window-switch"><input type="checkbox"><span class="window-slider-open"></span></label></p>
+                        <!-- <p>🪟North▲ Window <label class="window-switch"><input type="checkbox"><span class="window-slider-open"></span></label></p> -->
                     </li>
 
+                    <li>
+                        <xp>Kitchen</xp>     
+                        <!-- <p>🪟North▲ Window <label class="window-switch"><input type="checkbox"><span class="window-slider-open"></span></label></p> -->
+                    </li>
                 </ul>
 
             </div>
