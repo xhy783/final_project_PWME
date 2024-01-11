@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var presetTemperature = parseInt(slider.value);
     document.getElementById('preset-temperature').textContent = presetTemperature;
 
-    // 每0.01秒更新阴影
+    // 0.01s shadow
     setInterval(() => {
         var newPresetTemperature = parseInt(slider.value);
         if (newPresetTemperature !== presetTemperature) {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         temperatureContainer.style.boxShadow = shadow;
     }, 10);
 
-    // 每1秒更新当前温度
+    // 1s temp
     setInterval(() => {
         if (currentTemperature < presetTemperature) {
             currentTemperature++;
@@ -48,7 +48,7 @@ function getColorForTemperature(temperature) {
 function calculateShadow(presetTemperature) {
     var shadowX = (presetTemperature - 20) * -2;
     var shadowOpacity = 0 + (presetTemperature - 20) * 0.009;
-    // 使用rgba颜色值，其中透明度为shadowOpacity
+    // shadowOpacity=transparency
     return `${shadowX}px -20px 20px rgba(27, 27, 27, ${shadowOpacity})`;
 }
 
