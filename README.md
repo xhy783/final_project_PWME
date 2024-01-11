@@ -15,7 +15,8 @@
 ### Access to the web page
 
 - I have deployed the web page on the server, you can access it by the following link:
-- `<https://xhycloud.net/Virtual_Room.html>`
+- `<https://xhycloud.net/Virtual_Room.html>`(Due to the substantial financial requirements to maintain this domain, we are unable to afford it. Therefore, we have canceled this domain and replaced it with the following IP address)
+- `<http://8.140.205.167/home4/Virtual_Room.html>`
 
 ### How to use the web page
 
