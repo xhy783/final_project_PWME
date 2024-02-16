@@ -7,7 +7,7 @@ const weatherConditions = {
     "多云": "☁️",
     "阴": "🌥",
     "有风": "🌬️",
-    "平静": "🌀", // 没有直接对应的符号，使用相似符号表示
+    "平静": "🌀", 
     "微风": "🌬️",
     "和风": "🌬️",
     "清风": "🌬️",
@@ -87,7 +87,7 @@ function fetchWeatherInfo(city, key) {
         if (data && data.status === "1" && data.lives && data.lives.length > 0) {
             var weatherData = data.lives[0];
             updateWeatherInfo(weatherData);
-            updateWeatherSymbol(weatherData.weather); // 更新天气符号
+            updateWeatherSymbol(weatherData.weather);
         } else {
             throw new Error('天气信息获取失败');
         }
@@ -104,6 +104,6 @@ function updateWeatherInfo(weatherData) {
 }
 
 function updateWeatherSymbol(condition) {
-    const symbol = weatherConditions[condition] || ""; // 使用默认符号或空字符串
+    const symbol = weatherConditions[condition] || ""; 
     document.getElementById('weather-data').textContent += ` ${symbol}`;
 }
